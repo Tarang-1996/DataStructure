@@ -1,4 +1,4 @@
-//import LinkedList.Node;
+
 
 public class FindIntersectionNode {
 
@@ -49,17 +49,7 @@ public class FindIntersectionNode {
 		}
 		
 		System.out.println(node.data);
-		/*
-		 * list.head.next.next.next.next = list2.head; list1.head.next.next.next
-		 * = list2.head; int l1 = findLength(list); int l2 = findLength(list1);
-		 * LinkedList.Node fast = null; LinkedList.Node slow = null; if (l1 >
-		 * l2) { fast = list.head; for (int j = 0; j < (l1 - l2); j++) { fast =
-		 * fast.next; } slow = list1.head; } else { fast = list1.head; for (int
-		 * j = 0; j < (l2 - l1); j++) { fast = fast.next; } slow = list.head; }
-		 * while (fast != null && slow != null) { if (fast == slow) {
-		 * System.out.println(fast + " " + fast.data); System.out.println(slow +
-		 * " " + slow.data); break; } fast = fast.next; slow = slow.next; }
-		 */
+		
 
 	}
 
