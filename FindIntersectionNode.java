@@ -32,6 +32,8 @@ public class FindIntersectionNode {
 		System.out.println(list1.length());
 		list2.printList();
 		System.out.println(list2.length());
+		list3.printList();
+		System.out.println(list3.length());
 
 		int length1 = list1.length();
 		int length2 = list2.length();

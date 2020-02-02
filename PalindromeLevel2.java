@@ -11,7 +11,7 @@ public class PalindromeLevel2 {
 		int end=arr.length-1;
 		
 		while(start<end){
-			int diff=arr[start]-arr[end];
+			int diff=absolute(arr[start]-arr[end]);
 			
 			if(diff!=0 && diff!=32){
 				

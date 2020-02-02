@@ -43,6 +43,7 @@ public class InsertLinkList {
 			 if(temp.data==d){
 				 temp.next=temp.next.next;
 			 }
+			 	temp=temp.next;
 		 }
 		return list;
 		 

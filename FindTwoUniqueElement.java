@@ -12,15 +12,14 @@ public class FindTwoUniqueElement {
 		System.out.println(flag);
 		int num1 = 0, num2 = 0;
 		for (int i = 0; i < arr.length; i++) {
-			if ((arr[i] ^ flag) != 0) {
+			if ((arr[i] & flag) != 0) {
 				num1 ^= arr[i];
 			} else {
 				num2 ^= arr[i];
 			}
 
 		}
-		System.out.println("num1="+num1+" num2="+num2);
+		System.out.println("num1=" + num1 + " num2=" + num2);
 	}
-	
 
 }

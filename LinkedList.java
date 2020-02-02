@@ -1,6 +1,6 @@
 public class LinkedList {
 
-	Node head; // head of list
+	public Node head; // head of list
 
 	public int length() {
 		Node ptr = head;
@@ -58,6 +58,18 @@ public class LinkedList {
 		}
 		ptr.next = dest.head;
 	}
+	public Node ReverseLinkedList(){
+		Node current=head;
+		Node prev=null,next=null;
+		while(current!=null){
+			next=current.next;
+			current.next=prev;
+			prev=current;
+			
+			current=next;
+		}
+		return prev;
+	}
 
 	public static Node findIntersaction(Node head1, Node head2) {
 
@@ -83,6 +95,7 @@ public class LinkedList {
 		}
 		return ptr;
 	}
+	
 
 	// Driver code
 	public static void main(String[] args) {
@@ -105,7 +118,12 @@ public class LinkedList {
 
 		// Print the LinkedList
 		list.printList();
+		list.ReverseLinkedList();
+		list.printList();
+		
 	}
+
+	
 
 }
 

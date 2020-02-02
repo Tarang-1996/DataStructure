@@ -14,16 +14,11 @@ public class ArrayRotation {
 		for(int j=d;j<arr.length && k<arr.length;j++){
 			
 			arr[k++]=arr[j];
-//			System.out.print(arr[k]+" ");
 		}
 		
-//		for(int t=0;t<arr.length;t++){
-//			System.out.print(arr[t]);
-//		}
-//		System.out.println();
-		int h=0;
-		for(int l=arr.length-d;l<arr.length && h<brr.length;l++){
-			arr[l]=brr[h++];
+		
+		for(int l=0;l<brr.length;l++){
+			arr[k++]=brr[l];
 		}
 		for(int t=0;t<arr.length;t++){
 			System.out.print(arr[t]);
